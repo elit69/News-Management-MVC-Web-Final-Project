@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'NotoSansKhmer';
+	src: url('notosanskhmer-regular.eot');
+	src: url('notosanskhmer-regular.eot') format('embedded-opentype'),
+    	 url('notosanskhmer-regular.woff') format('woff'),
+    	 url('notosanskhmer-regular.ttf') format('truetype'),
+         url('notosanskhmer-regular.svg#NotoSansKhmer') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+			
+@font-face {
+	font-family: 'KhmerOSKoulen';
+	src: url('khmer os koulen.eot');
+	src: url('khmer os koulen.eot') format('embedded-opentype'),
+    	 url('khmer os koulen.woff') format('woff'),
+    	 url('khmer os koulen.ttf') format('truetype'),
+         url('khmer os koulen.svg#KhmerOSKoulen') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+			
+			@font-face {
+	font-family: 'Romnea';
+	src: url('romnea.eot');
+	src: url('romnea.eot') format('embedded-opentype'),
+    	 url('romnea.woff') format('woff'),
+    	 url('romnea.ttf') format('truetype'),
+         url('romnea.svg#Romnea') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+			

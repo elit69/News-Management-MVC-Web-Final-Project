@@ -1,0 +1,46 @@
+.panel-body {
+	padding-right:15px;
+	padding-bottom:0;
+}
+
+.card-1 {
+	margin-right:0;
+}
+
+#owl-demo .item .owl-image {
+	display:block;
+	height:265px!important;
+	border-radius:4px;
+	width:100%;
+	background-size:cover;
+	-ms-background-position-x:center;
+	-ms-background-position-y:center;
+	background-position: top;
+}
+
+#owl-demo .item .news-title-background {
+	background-color:#000;
+	opacity:.9;
+	filter:alpha(opacity=90);
+	position:absolute;
+	bottom:0;
+	color:#fff;
+	padding:15px;
+	font-size:1.2em;
+	height:88px;
+	width:100%!important;
+}
+
+.owl-desc {
+	line-height:25px;
+	height:50px;
+	-webkit-line-clamp:2;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+}
+
+.pager {
+	margin:15px;
+}

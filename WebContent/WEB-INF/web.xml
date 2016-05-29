@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>articleManagement</display-name>
+	<welcome-file-list>
+		<welcome-file>home</welcome-file>
+	</welcome-file-list>
+
+	<!-- ###############################Home Page -->
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>Controller.FrontEnd.Home.Home</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################End Home Page -->
+
+	<!-- ###############################Category Page -->
+	<servlet>
+		<servlet-name>Category</servlet-name>
+		<servlet-class>Controller.FrontEnd.Category.Category</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Category</servlet-name>
+		<url-pattern>/category</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################End Category Page -->
+
+	<!-- ###############################Article Page -->
+	<servlet>
+		<servlet-name>Article</servlet-name>
+		<servlet-class>Controller.FrontEnd.Article</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Article</servlet-name>
+		<url-pattern>/article</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################End Article Page -->
+
+	<!-- ###############################Search Page -->
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Controller.FrontEnd.Search.Search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################End Search Page -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Controller.FrontEnd.Home.login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################Json Controller for front end -->
+	<servlet>
+		<servlet-name>JsonController</servlet-name>
+		<servlet-class>Controller.FrontEnd.JsonController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonController</servlet-name>
+		<url-pattern>*.json</url-pattern>
+	</servlet-mapping>
+	<!-- ###############################End Json Controller for front end -->
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500.jsp</location>
+	</error-page>
+</web-app>
